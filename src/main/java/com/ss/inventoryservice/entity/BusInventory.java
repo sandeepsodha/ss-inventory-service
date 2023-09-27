@@ -18,7 +18,7 @@ public class BusInventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String busNumber;
+    private Long busNumber;
     private int availableSeats;
     private LocalDate lastUpdatedDate;
 

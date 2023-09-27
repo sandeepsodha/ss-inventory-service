@@ -24,6 +24,12 @@ public class BusInventoryController {
         return busInventoryService.findById(id);
     }
 
+
+    @GetMapping("/busnumber/{busNumber}")
+    public BusInventory getBusInventoryByBusNumber(@PathVariable Long busNumber) {
+        return busInventoryService.findById(busNumber);
+    }
+
     @PostMapping("/")
     public BusInventory addBusInventory(@RequestBody BusInventory busInventory) {
         return busInventoryService.addBusInventory(busInventory);
