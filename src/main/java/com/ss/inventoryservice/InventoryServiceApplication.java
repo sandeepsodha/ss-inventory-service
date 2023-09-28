@@ -14,7 +14,7 @@ public class InventoryServiceApplication {
 	public static void main(String[] args)
 	{
 		new SpringApplicationBuilder()
-				.profiles("dev")
+				.profiles("prod")
 				.sources(InventoryServiceApplication.class)
 				.run(args);
 	}
